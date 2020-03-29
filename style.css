@@ -1,0 +1,204 @@
+/*
+Vertical Stack FlexBox CSS
+Used for the index.html page
+*/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/*Using Google Fonts */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.3em;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+}
+
+/* Header Navigation*/
+header {
+  width: 100%;
+  display: block;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  algin-items;
+  center;
+}
+
+header nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: grey;
+}
+
+header nav a:hoover {
+  color: white;
+  background-color: black;
+}
+
+/* Website Body */
+html, body {
+  background-color: #1EE7EE;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+/*Centering Logo on index page */
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* social media icon bar */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.instagram {
+  background: #125688;
+  color: white;
+}
+
+/*
+Stretch Middle Fixed Spacing FlexBox CSS
+Used for the about.html page
+*/
+.column-layout {
+  max-width: 1300px;
+  margin: 40px auto 0 auto;
+  line-height: 1.65;
+  padding: 20px 50px;
+  display: flex;
+}
+
+.main-column {
+  flex: 3;
+  order: 2;
+}
+
+.sidebar-one {
+  flex: 1;
+  order: 1;
+}
+
+.sidebar-two {
+  flex: 1;
+  order: 3;
+}
+
+/* FlexBox style boxes used to show my creative work. Each color is part of
+one specialty and is algined used on the work.html page */
+.call-outs-container {
+  max-width: 1400px;
+  margin: 40px auto 0 auto;
+}
+
+.call-out {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 30%;
+}
+
+@media (min-width: 900px) {
+  .call-outs-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.call-out:nth-child(1) {
+  background-color: #c0dbe2;
+}
+
+.call-out:nth-child(2) {
+  background-color: #cdf1c3;
+}
+
+.call-out:nth-child(3) {
+  background-color: #ccb9da;
+}
